@@ -1,0 +1,136 @@
+@import 'var.less';
+
+.footer{
+    text-align: center;
+    background-color: @color-darkblue;
+
+    &-wrapper{
+        padding: 40px 77px;
+
+        @media only screen and (min-width: @mobile){
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding-left: 165px;
+            padding-right: 165px;
+        }
+
+        @media only screen and (min-width: @mobile){
+            padding-bottom: 15px;
+        }
+    }
+
+    &-items{
+
+        @media only screen and (min-width: @mobile){
+            width: calc(100% / 2);
+        }
+
+        @media only screen and (min-width: @desktop){
+            width: calc(100% / 3);
+        }
+    }
+
+    &-logo{
+
+        @media only screen and (min-width: @desktop){
+            margin-right: auto;
+            text-align: left;
+        }
+
+        &-icons{
+            margin: 32px 0;
+
+            a{
+                width: 24px;
+                text-decoration: none;
+                display: inline-block;
+                margin: 0 6px;
+            }
+        }
+    }
+
+    &-bar{
+        margin-top: 32px;
+        margin-bottom: 45px;
+
+        @media only screen and (min-width: @mobile){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: auto;
+            text-align: left;
+
+        }
+
+        @media only screen and (min-width: @desktop){
+            margin: 0 auto;
+        }
+
+        ul{
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+
+            li{
+                margin-bottom: 8px;
+                line-height: 26px;
+
+                @media only screen and (min-width: @mobile){
+                    margin-right: 60px;
+                }
+
+                @media only screen and (min-width: @desktop){
+                    margin-right: 100px;
+                }
+
+                a{
+                    text-decoration: none;
+                    color: @color-white;
+                    font-size: 15px;
+                    opacity: 0.8;
+
+                    &:hover{
+                        color: @color-green;
+                    }
+                }
+            }
+        }
+    }
+
+    &-inner{
+
+        @media only screen and (min-width: @mobile){
+            margin-top: 30px;
+        }
+
+        @media only screen and (min-width: @desktop){
+            margin-left: auto;
+            text-align: right;
+        }
+
+        p{
+            margin-top: 40px;
+            margin-bottom: 0;
+            color: #fff;
+            opacity: 0.4;
+            font-size: 15px;
+        }
+    }
+
+   &-challenge{
+       padding: 15px;
+
+       p{
+           opacity: .6;
+           font-size: 12px;
+           color: @color-white;
+       }
+
+       a{
+           color: @color-white;
+           text-decoration: underline;
+       }
+   }
+}

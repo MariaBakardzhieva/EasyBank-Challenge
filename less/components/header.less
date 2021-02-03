@@ -1,0 +1,113 @@
+@import 'var.less';
+
+.header{
+    background-color: @color-white;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    
+    &-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 20px;
+        margin: 0 auto;
+
+        @media only screen and (min-width: @mobile){
+            max-width: 1200px;
+        }
+    }
+    
+
+    &-logo{
+        margin-right: auto;
+
+        img{
+            max-width: 100%;
+        }
+    }
+
+   &-nav{
+       display: none;
+
+       @media only screen and (min-width: @mobile){
+           display: block;
+       }
+
+       &-link{
+            text-decoration: none;
+            padding-left: 30px;
+            font-size: 14px;
+            color: #9597a5;
+
+            &:hover{
+                color: @color-green;
+                text-decoration: none;
+            }
+       }
+   }
+
+   .button{
+       display: none;
+
+       @media only screen and (min-width: @mobile){
+        display: inline-block;
+        margin-left: auto;
+        }
+    }
+
+    .btn{
+        background-color: #fff;
+        box-shadow: none;
+        border: none;
+
+        @media only screen and (min-width: @mobile) {
+            display: none;
+        }
+    }
+
+    .modal-content{
+        margin-top: 66px;
+
+        @media only screen and (min-width: @mobile) {
+            display: none;
+        }
+    }
+
+    .modal-header{
+        border-bottom: none;
+        padding: 15px 15px 0 15px;
+    }
+
+    .modal-body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 15px 7px 15px;
+
+        ul{
+            list-style: none;
+            margin: 0;
+            padding-left: 0;
+        }
+
+        li{
+            margin-bottom: 8px;
+            line-height: 26px;
+
+            a{
+                text-decoration: none;
+                color: @color-darkblue;
+                font-size: 15px;
+                opacity: 0.8;
+
+                &:hover{
+                    color: @color-green;
+                }
+            }
+        }
+    }
+}

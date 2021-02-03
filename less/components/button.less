@@ -1,0 +1,35 @@
+@import 'var.less';
+
+.button{
+    border-radius: 100px;
+    text-decoration: none;
+
+    &-sm{
+        padding: 12px 20px;
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    &-xs{
+        padding: 12px 8px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    
+    &-lg{
+        padding: 15px 30px;
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    &-color{
+        background-image: linear-gradient(90deg, #31d35c,  #2bb7da);
+        color: @color-white;
+    }
+}
+.button:hover,
+.button:focus {
+  background: linear-gradient(to right, hsl(136, 69%, 70%), hsl(192, 66%, 67%));
+  color: @color-white;
+  text-decoration: none;
+}
